@@ -1,10 +1,13 @@
 import { Button } from "@/components/ui/button";
+import Product from "@/components/Product";
+import { newArrivals } from "@/constants/products";
 import Image from "next/image";
 import logo1 from "/public/logo1.png";
 import logo2 from "/public/logo2.png";
 import logo3 from "/public/logo3.png";
 import logo4 from "/public/logo4.png";
 import logo5 from "/public/logo5.png";
+import { Divide } from "lucide-react";
 
 export default function Home() {
   return (
@@ -65,6 +68,26 @@ export default function Home() {
         <Image src={logo3} alt="logo3" className="h-auto w-auto py-10" />
         <Image src={logo4} alt="logo4" className="h-auto w-auto py-10" />
         <Image src={logo5} alt="logo5" className="h-auto w-auto py-10" />
+      </section>
+      <section className="mx-16">
+        <h1 className="text-5xl text-center font-bold my-20">New Arrivals</h1>
+        <div className="flex justify-between">
+          {newArrivals.map((product) => (
+            <div key={product.id}>
+              <Product
+                title={product.title}
+                image={product.image}
+                rating={product.rating}
+                price={product.price}
+              />
+            </div>
+          ))}
+        </div>
+        <div className="flex items-center justify-center">
+          <Button variant="outline" className="mx-auto my-12">
+            View All
+          </Button>
+        </div>
       </section>
     </main>
   );
