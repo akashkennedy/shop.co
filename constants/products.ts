@@ -28,3 +28,34 @@ export const newArrivals = [
     price: 130,
   },
 ];
+
+export const topSelling = [
+  {
+    id: 1,
+    image: "/product5.png",
+    title: "Vertical Striped T-Shirt",
+    rating: 4,
+    price: 212,
+  },
+  {
+    id: 2,
+    image: "/product6.png",
+    title: "Courage Graphic T-Shirt",
+    rating: 4,
+    price: 145,
+  },
+  {
+    id: 3,
+    image: "/product7.png",
+    title: "Loose Fit Bermuda Shorts",
+    rating: 3,
+    price: 80,
+  },
+  {
+    id: 4,
+    image: "/product8.png",
+    title: "Faded Skinny T-Shirt",
+    rating: 5,
+    price: 210,
+  },
+];
