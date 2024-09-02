@@ -84,7 +84,7 @@ export default function Home() {
           ))}
         </div>
         <div className="flex items-center justify-center">
-          <Button variant="outline" className="mx-auto my-12">
+          <Button variant="outline" className="mx-auto my-20 rounded-full">
             View All
           </Button>
         </div>

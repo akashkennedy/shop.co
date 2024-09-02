@@ -27,7 +27,9 @@ const Product = ({ image, title, price, rating }: ProductProps) => {
           <Star fill="#FFC633" stroke="0" />
           <Star fill="#FFC633" stroke="0" />
           <Star fill="#FFC633" stroke="0" />
-          <p className="text-gray-500 ml-1">{rating}/5</p>
+          <p className="text-gray-500 ml-1">
+            {rating}/<span className="font-normal text-black">5</span>
+          </p>
         </div>
         <h4 className="font-bold text-md">${price}</h4>
       </div>
