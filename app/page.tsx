@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Footer from "@/components/Footer";
+import Testimonial from "@/components/Testimonial";
+import { testimonials } from "@/constants/testimonials";
 import Product from "@/components/Product";
 import { newArrivals } from "@/constants/products";
 import { topSelling } from "@/constants/products";
@@ -9,6 +11,7 @@ import logo2 from "/public/logo2.png";
 import logo3 from "/public/logo3.png";
 import logo4 from "/public/logo4.png";
 import logo5 from "/public/logo5.png";
+import { ArrowLeft } from "lucide-react";
 
 export default function Home() {
   return (
@@ -108,6 +111,24 @@ export default function Home() {
           <Button variant="outline" className="mx-auto my-20 rounded-full">
             View All
           </Button>
+        </div>
+      </section>
+      <section className="px-16">
+        <div className="flex justify-between items-center">
+          <h1 className="text-5xl font-bold">OUR HAPPY CUSTOMERS</h1>
+          <div className="flex gap-3">
+            <ArrowLeft />
+            <ArrowLeft className="rotate-180" />
+          </div>
+        </div>
+        <div className="flex gap-3 my-10">
+          {testimonials.map((testimonial) => (
+            <Testimonial
+              key={testimonial.id}
+              name={testimonial.name}
+              content={testimonial.content}
+            />
+          ))}
         </div>
       </section>
       <Footer />
