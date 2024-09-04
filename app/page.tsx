@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Footer from "@/components/Footer";
 import Product from "@/components/Product";
 import { newArrivals } from "@/constants/products";
 import { topSelling } from "@/constants/products";
@@ -109,6 +110,7 @@ export default function Home() {
           </Button>
         </div>
       </section>
+      <Footer />
     </main>
   );
 }
