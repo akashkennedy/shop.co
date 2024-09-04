@@ -1,8 +1,32 @@
 import Image from "next/image";
+import { Button } from "./ui/button";
+import { Mail } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#F0F0F0] w-full pt-24 pb-10 px-16">
+    <footer className="bg-[#F0F0F0] w-full py-10 pb-10 px-16">
+      <section className="h-40 w-full rounded-xl bg-black p-8 flex justify-between items-center mb-10">
+        <h1 className="text-4xl font-black text-white w-1/2">
+          STAY UP TO DATE ABOUT OUR LATEST OFFERS
+        </h1>
+        <div className="flex flex-col items-center gap-3 w-80">
+          <div className="flex items-center">
+            <Mail className="text-gray-500 absolute right-96" />
+            <input
+              type="email"
+              required
+              className="bg-white rounded-full h-10 pl-10 min-w-80"
+              placeholder="Enter Your Email Address"
+            />
+          </div>
+          <Button
+            className="w-full bg-white text-black rounded-full"
+            type="submit"
+          >
+            Subscribe to Newsletter
+          </Button>
+        </div>
+      </section>
       <div className="flex gap-5 justify-between my-10">
         <div className="flex flex-col w-72 gap-8">
           <h3 className="font-extrabold text-4xl">SHOP.CO</h3>
