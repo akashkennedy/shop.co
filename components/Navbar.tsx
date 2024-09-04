@@ -1,10 +1,17 @@
-import { ChevronDown, Search, ShoppingCart, UserCircle } from "lucide-react";
+import {
+  ChevronDown,
+  Search,
+  ShoppingCart,
+  UserCircle,
+  Menu,
+} from "lucide-react";
 
 const Navbar = () => {
   return (
-    <nav className="flex gap-6 items-center justify-between my-6 mx-16">
+    <nav className="mx-5 flex gap-6 items-center justify-between my-6 lg:mx-16">
+      <Menu className="lg:hidden cursor-pointer" />
       <h1 className="text-3xl font-extrabold">SHOP.CO</h1>
-      <ul className="flex gap-3">
+      <ul className="hidden lg:flex gap-3">
         <li>
           Shop <ChevronDown className="inline" />
         </li>
@@ -13,10 +20,10 @@ const Navbar = () => {
         <li>Brands</li>
       </ul>
       <div className="h-8 flex items-center">
-        <Search className="relative -right-10" />
+        <Search className="mr-7 cursor-pointer lg:mr-0 relative -right-10" />
         <input
           type="search"
-          className="rounded-full w-[35em] bg-gray-100 text-gray-800 p-3 placeholder-shown:p-3 pl-16 placeholder-shown:pl-16"
+          className="hidden lg:block rounded-full w-[35em] bg-gray-100 text-gray-800 p-3 placeholder-shown:p-3 pl-16 placeholder-shown:pl-16"
           placeholder="Search for Products"
         />
       </div>
