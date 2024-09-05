@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <main>
       <section>
-        <div className="flex flex-col gap-5 absolute w-1/2 px-16 justify-center h-full -my-12">
+        <div className="flex flex-col gap-5 w-1/2 px-5 lg:px-16 justify-center h-full absolute -my-12">
           <h1 className="font-extrabold text-6xl text-left">
             FIND CLOTHES THAT MATCHES YOUR STYLE
           </h1>
