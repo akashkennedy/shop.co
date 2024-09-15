@@ -22,7 +22,7 @@ const Navbar = () => {
         <li>Brands</li>
       </ul>
       <div className="h-8 flex items-center">
-        <Search className="mr-7 cursor-pointer lg:mr-0 relative -right-10 md:ml-14" />
+        <Search className="mr-7 cursor-pointer lg:mr-0 relative -right-10" />
         <input
           type="search"
           className="hidden lg:block rounded-full w-[35em] bg-gray-100 text-gray-800 p-3 placeholder-shown:p-3 pl-16 placeholder-shown:pl-16"

@@ -11,7 +11,7 @@ interface ProductProps {
 const Product = ({ image, title, price, rating }: ProductProps) => {
   return (
     <div>
-      <div className="h-64 w-56 rounded-3xl">
+      <div className="h-52 w-40 lg:h-64 lg:w-56 rounded-3xl">
         <Image
           src={image}
           alt={title}
