@@ -4,14 +4,14 @@ import { Mail } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#F0F0F0] w-full py-10 pb-10 px-16">
-      <section className="h-40 w-full rounded-xl bg-black p-8 flex justify-between items-center mb-10">
-        <h1 className="text-4xl font-black text-white w-1/2">
+    <footer className="bg-[#F0F0F0] w-full py-10 pb-10 px-5 lg:px-16">
+      <section className="h-72 gap-2 lg:h-40 w-full rounded-xl bg-black p-8 flex flex-col lg:flex-row justify-between items-center mb-10">
+        <h1 className="w-full text-3xl lg:text-4xl font-black text-white lg:w-1/2">
           STAY UP TO DATE ABOUT OUR LATEST OFFERS
         </h1>
         <div className="flex flex-col items-center gap-3 w-80">
           <div className="flex items-center">
-            <Mail className="text-gray-500 absolute right-96" />
+            <Mail className="text-gray-500 absolute left-11 lg:right-96 lg:left-auto" />
             <input
               type="email"
               required
@@ -27,8 +27,8 @@ const Footer = () => {
           </Button>
         </div>
       </section>
-      <div className="flex gap-5 justify-between my-10">
-        <div className="flex flex-col w-72 gap-8">
+      <div className="grid grid-cols-2 gap-10 lg:flex lg:gap-5 justify-between my-10">
+        <div className="hidden lg:flex flex-col w-72 gap-8">
           <h3 className="font-extrabold text-4xl">SHOP.CO</h3>
           <p className="text-gray-700 font-light">
             We Have Clothes That Suits Your Style and Which You are Proud to
@@ -103,8 +103,8 @@ const Footer = () => {
         </div>
       </div>
       <hr className="bg-gray-400 h-[2px]" />
-      <div className="flex mt-8 justify-between items-center">
-        <p className="text-gray-700 font-light">
+      <div className="block lg:flex mt-8 justify-between items-center">
+        <p className="text-center lg:text-left my-3 lg:my-0 text-gray-700 font-light">
           Shop.co &copy; 2000-2024. All Rights Reserved
         </p>
         <div className="flex justify-between gap-2">
