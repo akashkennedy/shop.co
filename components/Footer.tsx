@@ -4,14 +4,14 @@ import { Mail } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#F0F0F0] w-full py-10 pb-10 px-5 lg:px-16">
-      <section className="h-72 gap-2 lg:h-40 w-full rounded-xl bg-black p-8 flex flex-col lg:flex-row justify-between items-center mb-10">
+    <footer className="bg-[#F0F0F0] w-full py-10 pb-10 px-5 md:px-10 lg:px-16">
+      <section className="h-72 gap-2 lg:h-40 md:h-36 w-full rounded-xl bg-black p-8 flex flex-col lg:flex-row md:flex-row justify-between items-center mb-10">
         <h1 className="w-full text-3xl lg:text-4xl font-black text-white lg:w-1/2">
           STAY UP TO DATE ABOUT OUR LATEST OFFERS
         </h1>
         <div className="flex flex-col items-center gap-3 w-80">
           <div className="flex items-center">
-            <Mail className="text-gray-500 absolute left-11 lg:right-96 lg:left-auto" />
+            <Mail className="text-gray-500 absolute left-10 lg:right-96 lg:left-auto md:left-[26.7rem]" />
             <input
               type="email"
               required
@@ -103,7 +103,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className="bg-gray-400 h-[2px]" />
-      <div className="block lg:flex mt-8 justify-between items-center">
+      <div className="block md:flex lg:flex mt-8 justify-between items-center">
         <p className="text-center lg:text-left my-3 lg:my-0 text-gray-700 font-light">
           Shop.co &copy; 2000-2024. All Rights Reserved
         </p>
