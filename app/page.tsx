@@ -75,7 +75,7 @@ export default function Home() {
       </section>
       <section className="mx-5 lg:mx-16">
         <h1 className="text-5xl text-center font-bold my-20">New Arrivals</h1>
-        <div className="grid grid-cols-2 gap-5 lg:flex justify-between">
+        <div className="grid grid-cols-2 gap-5 lg:flex md:flex justify-between">
           {newArrivals.map((product) => (
             <div key={product.id}>
               <Product
