@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <main>
       <section>
-        <div className="flex flex-col gap-5 md:gap-3 md:w-[60%] w-full mt-5 lg:my-20 lg:w-1/2 px-5 lg:px-16 h-full lg:absolute md:absolute">
+        <div className="flex flex-col gap-5 md:gap-3 md:w-[60%] w-full mt-5 lg:my-20 lg:w-1/2 px-5 lg:px-16 h-full lg:absolute md:absolute md:mx-5">
           <h1 className="text-4xl font-extrabold lg:text-6xl md:text-4xl text-left">
             FIND CLOTHES THAT MATCHES YOUR STYLE
           </h1>
@@ -73,7 +73,7 @@ export default function Home() {
         <Image src={logo4} alt="logo4" className="h-auto w-auto py-10" />
         <Image src={logo5} alt="logo5" className="h-auto w-auto py-10" />
       </section>
-      <section className="mx-5 lg:mx-16">
+      <section className="mx-5 lg:mx-16 md:mx-10">
         <h1 className="text-5xl text-center font-bold my-20">New Arrivals</h1>
         <div className="grid grid-cols-2 gap-5 lg:flex md:flex justify-between">
           {newArrivals.map((product) => (
@@ -93,7 +93,7 @@ export default function Home() {
           </Button>
         </div>
       </section>
-      <section className="mx-5 lg:mx-16">
+      <section className="mx-5 lg:mx-16 md:mx-10">
         <h1 className="text-5xl text-center font-bold my-10 lg:my-20">
           Top Selling
         </h1>
@@ -115,7 +115,7 @@ export default function Home() {
           </Button>
         </div>
       </section>
-      <section className="mx-5 lg:mx-16">
+      <section className="mx-5 lg:mx-16 md:mx-10">
         <div className="flex justify-between items-center">
           <h1 className="text-4xl lg:text-5xl font-bold text-left lg:text-center">
             OUR HAPPY CUSTOMERS
