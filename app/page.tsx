@@ -97,7 +97,7 @@ export default function Home() {
         <h1 className="text-5xl text-center font-bold my-10 lg:my-20">
           Top Selling
         </h1>
-        <div className="grid grid-cols-2 gap-3 lg:flex justify-between">
+        <div className="grid grid-cols-2 gap-3 lg:flex md:grid-cols-4 justify-between">
           {topSelling.map((product) => (
             <div key={product.id}>
               <Product
