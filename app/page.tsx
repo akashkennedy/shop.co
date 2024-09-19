@@ -17,8 +17,8 @@ export default function Home() {
   return (
     <main>
       <section>
-        <div className="flex flex-col gap-5  w-full mt-5 lg:my-20 lg:w-1/2 px-5 lg:px-16 justify-center h-full lg:absolute">
-          <h1 className="text-4xl font-extrabold lg:text-6xl text-left">
+        <div className="flex flex-col gap-5 md:gap-3 md:w-[60%] w-full mt-5 lg:my-20 lg:w-1/2 px-5 lg:px-16 h-full lg:absolute md:absolute">
+          <h1 className="text-4xl font-extrabold lg:text-6xl md:text-4xl text-left">
             FIND CLOTHES THAT MATCHES YOUR STYLE
           </h1>
           <p className="text-gray-500 text-sm">
@@ -26,10 +26,10 @@ export default function Home() {
             designed to bring out your individuality and cater to your sense of
             style
           </p>
-          <Button className="rounded-full w-full lg:max-w-48 max-h-16 p-6 bg-black font-semibold">
+          <Button className="rounded-full w-full lg:max-w-48 max-h-16 md:max-w-40 p-6 bg-black font-semibold">
             Shop Now
           </Button>
-          <div className="size-60 lg:size-full grid grid-cols-2 mx-auto lg:flex gap-7 mt-5">
+          <div className="size-60 lg:size-full grid grid-cols-2 mx-auto lg:flex md:flex md:mx-0 gap-7 mt-5">
             <div>
               <h5 className="font-semibold text-3xl lg:text-4xl">200+</h5>
               <p className="text-gray-500 text-sm">International Brands</p>
@@ -61,7 +61,7 @@ export default function Home() {
         <Image
           src="/hero-wrapper.png"
           alt="Hero Wrapper"
-          className="hidden lg:block min-w-full overflow-clip bg-contain "
+          className="hidden lg:block md:block min-w-full overflow-clip bg-contain "
           height={999}
           width={999}
         />
