@@ -66,7 +66,7 @@ export default function Home() {
           width={999}
         />
       </section>
-      <section className="flex-wrap min-h-28 bg-black w-full flex justify-evenly">
+      <section className="flex-wrap gap-5 h-28 bg-black w-full flex justify-evenly">
         <Image src={logo1} alt="logo1" className="h-auto w-auto py-10" />
         <Image src={logo2} alt="logo2" className="h-auto w-auto py-10" />
         <Image src={logo3} alt="logo3" className="h-auto w-auto py-10" />
@@ -125,7 +125,7 @@ export default function Home() {
             <ArrowLeft className="rotate-180" />
           </div>
         </div>
-        <div className="grid grid-cols-1 lg:flex gap-3 my-10">
+        <div className="grid grid-cols-1 lg:flex md:flex gap-3 my-10">
           {testimonials.map((testimonial) => (
             <Testimonial
               key={testimonial.id}
