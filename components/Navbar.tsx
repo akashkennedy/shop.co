@@ -15,11 +15,19 @@ const Navbar = () => {
       </div>
       <ul className="hidden lg:flex md:flex gap-3">
         <li>
-          Shop <ChevronDown className="inline" />
+          <a href="#">
+            Shop <ChevronDown className="inline" />
+          </a>
         </li>
-        <li>On Sale</li>
-        <li>New Arrivals</li>
-        <li>Brands</li>
+        <li>
+          <a href="#">On Sale</a>
+        </li>
+        <li>
+          <a href="#">New Arrivals</a>
+        </li>
+        <li>
+          <a href="#">Brands</a>
+        </li>
       </ul>
       <div className="h-8 flex items-center">
         <Search className="mr-7 cursor-pointer lg:mr-0 relative -right-10" />
