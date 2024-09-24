@@ -1,16 +1,16 @@
-import Hero from "@/components/section/Hero";
-import Brands from "@/components/section/Brands";
+import Hero from "@/components/sections/Hero";
+import Brands from "@/components/sections/Brands";
 import Footer from "@/components/Footer";
-import NewArrivals from "@/components/section/NewArrivals";
-import TopSelling from "@/components/section/TopSelling";
-import HappyCustomers from "@/components/section/HappyCustomers";
+import NewArrivals from "@/components/sections/NewArrivals";
+import TopSelling from "@/components/sections/TopSelling";
+import HappyCustomers from "@/components/sections/HappyCustomers";
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <NewArrivals />
       <Brands />
+      <NewArrivals />
       <TopSelling />
       <HappyCustomers />
       <Footer />
